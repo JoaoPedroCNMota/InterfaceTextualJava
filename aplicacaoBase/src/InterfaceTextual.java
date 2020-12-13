@@ -1,3 +1,6 @@
+// João Pedro Correia Nogueira Mota - 170106144
+// André Bonifácio - 170137058
+
 
 import java.util.Scanner;
 import java.util.Locale;
@@ -185,7 +188,7 @@ public class InterfaceTextual {
                 switch (tipo) {
                 case 1: // crie abaixo uma Conta fornecendo "numero" e "cliente" 
                         // como argumentos para o construtor
-                    conta = ...
+                    conta = new Conta(numero, cliente);
                     break;
                 case 2:
                     // crie abaixo uma Poupanca fornecendo "numero" e "cliente" 
