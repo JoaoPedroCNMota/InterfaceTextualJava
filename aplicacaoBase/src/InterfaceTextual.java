@@ -1,5 +1,5 @@
-// João Pedro Correia Nogueira Mota - 170106144
-// André Bonifácio - 170137058
+// João Pedro Correia Nogueira Mota  - 170106144
+// André Bonifacio dos Santos Júnior - 170137058
 
 
 import java.util.Scanner;
@@ -193,12 +193,12 @@ public class InterfaceTextual {
                 case 2:
                     // crie abaixo uma Poupanca fornecendo "numero" e "cliente" 
                     // como argumentos para o construtor
-                    conta = ...
+                    conta = new Poupanca(numero, cliente);
                     break;
                 case 3:
                     // crie abaixo uma ContaBonificada fornecendo "numero" e "cliente" 
                     // como argumentos para o construtor
-                    conta = ...
+                    conta = new ContaBonificada(numero, cliente);
                     break;
                 default:
 
@@ -311,7 +311,7 @@ public class InterfaceTextual {
 
             break;
             
-        /*    
+            
         case OP_RENDER_JUROS_CONTAS:
             System.out.println("Favor entre numero da conta e  tecle Enter:");
             numero = sc.nextLine();
@@ -338,7 +338,7 @@ public class InterfaceTextual {
             }
 
             break;
-        */
+        
 
         
         case OP_EXIBIR_CONTAS_CLIENTE:

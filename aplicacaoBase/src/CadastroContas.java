@@ -95,4 +95,28 @@ public class CadastroContas {
 		return lc;
 	}
 
+	public int renderJuros(String n, double t) {
+		int r = -1;
+		Conta c = contas.procurar(n);
+		if (c != null) {
+			if(c instanceof Poupanca){
+				((Poupanca)c).renderJuros(t);
+				r = 1;
+			}
+		}
+		return r;
+	}
+
+	public int renderBonus(String n) {
+		int r = -1;
+		Conta c = contas.procurar(n);
+		if (c != null) {
+			if(c instanceof ContaBonificada){
+				((ContaBonificada)c).renderBonus();
+				r = 1;
+			}
+		}
+		return r;
+	}
+
 }

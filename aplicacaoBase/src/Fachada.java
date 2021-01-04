@@ -125,4 +125,12 @@ public class Fachada {
 		return clientes.listaClientes();
 	}
 
+	public int renderJuros(String numero, double valor) {
+		return contas.renderJuros(numero, valor);
+	}
+
+	public int renderBonus(String numero) {
+		return contas.renderBonus(numero);
+	}
+
 }
